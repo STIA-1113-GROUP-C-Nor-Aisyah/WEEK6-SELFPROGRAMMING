@@ -1,0 +1,44 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class MySwitchGrade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the score: ");
+		int score = sc.nextInt();
+		
+		score = score / 10;  // divide 10 to get real number 
+		
+		switch (score) { 
+		case 10:
+		case 9:
+			System.out.print("Excellent : Grade A");
+			break;
+		case 8:
+			System.out.print("Very Good : Grade B");
+			break;
+		case 7:
+			System.out.print("Good : Grade C");
+			break;
+		case 6:
+			System.out.print("Good : Grade D");
+			break;
+		case 5:
+			System.out.println("Good : Grade E");
+			break;
+		case 4:
+			System.out.print("Just Passed : Grade F");
+			break;
+		default:
+			System.out.println("Failed!");
+		}
+	
+		sc.close();
+
+	}
+
+}
